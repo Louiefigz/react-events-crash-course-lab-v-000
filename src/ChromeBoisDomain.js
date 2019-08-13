@@ -27,12 +27,12 @@ export default class ChromeBoisDomain extends Component {
   /* if the key pressed was 's', then it should call `resize` with '-' 
    */
   capturedLetter = (event) => {
-    let key = event.which;
-    if (key == 97 || key == 65) {
-      resize('+')
-    }
-    else if (key == 88 || key == 120) {
-      resize('-')
+    let currentKey = event.which;
+    if (currentKey = 97 || currentKey = 65) {
+      resize(+);
+    };
+    else if (currentKey = 88 || currentKey = 120) {
+      resize(-);
     }
   }
   render() {
